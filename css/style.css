@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80");
+    margin: 14px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 117vh;
+}
+
+.box {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.form-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+select {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn {
+    height: 35px;
+    background: rgba(76,68,182,0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.btn:hover {
+    opacity: 0.82;
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+/*********** Liste tableau ***********/
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #479ea6;
+  }
+  
+.styled-table thead tr {
+    background-color: #3377bb;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #b5bdbe;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background: rgb(15, 46, 56);
+}
+  
+nav ul a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+  
+nav ul a:hover {
+    background: #1565C0;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 900;  
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a{
+    padding: 0 10px;
+}
+
+
+main {
+    padding: 25px;
+}
+
+
+fieldset {
+    background-color: royalblue;
+    width: 1027px;
+    margin-top: 25px;
+}
+
+.right-links a {
+    padding: 0 10px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.main-box .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
+
+.message {
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.action {
+    display: flex;
+}
+
+span {
+    color: red;
+}
+
+.description input {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+button {    
+    padding: 15px 61px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #ffca7f;
+    margin: 48px;
+}
+
+main>header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 15px;
+    min-height: 80vh;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover 
+}
+
+.bouton1 {
+    padding: .5em .65em;
+    background-color: rgb(190 234 193);                                                                                                                  
+    border-radius: .2em;
+    transition-delay: .05s;
+    max-width: max-content;
+    max-height: fit-content;
+    text-align: center;
+    margin-top: 48px;
+}
+
+
+/*style navigation--------------*/
+
+.medaillon {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: text-bottom;
+}
+
+body>nav>*, .dropbtn {
+    display: inline-block;
+}
+
+body>nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+/*************** classer dans l order sementique    a verifier avait ete mis dans header*/ 
+/*style navigation--------------*/
+
+
+body>nav>*, .dropbtn {
+    display: inline-block;
+}
+
+body>nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+/*style navigation--------------*/
+body>header>* {
+    text-align: center;
+}
+
+.medaillon {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: text-bottom;
+}
+
+body>header>nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #50212a;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    padding-left: 860px;
+}
+
+.username {
+    color: #50212a;
+    font-weight: bold;
+}
